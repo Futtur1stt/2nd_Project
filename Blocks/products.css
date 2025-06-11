@@ -1,0 +1,129 @@
+.products {
+    display: block;
+}
+
+.products__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.products__list::before {
+    position: absolute;
+    content: url("../Icons/Bee-right.svg");
+    top: 10px;
+    left: 200px;
+}
+
+.products__list::after {
+    position: absolute;
+    content: url("../Icons/Bee-left.svg");
+    top: 0;
+    left: 1060px;
+}
+
+.products__card {
+    text-align: center;
+}
+
+.products__price {
+    color: var(--color-red);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.36;
+}
+
+.products__link {
+    position: relative;
+}
+
+.products__link::before {
+    position: absolute;
+    content: url("../Icons/Basket.svg");
+    top: 23px;
+    left: -35px;
+}
+
+.products__wrapper {
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.products__box {
+    position: relative;
+    display: inline-block;
+}
+
+.products__box::after {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 70px;
+    top: 0;
+    right: 0;
+    background-image: url("../Icons/Yellow-curcle.svg");
+    background-size: contain;
+}
+
+.products__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.products__quote-paragraph {
+    color: var(--color-txt-grey-light);
+    font-size: 26px;
+    font-style: italic;
+    line-height: 1.66;
+}
+
+.products__quote-author {
+    color: var(--color-title);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.36;
+}
+
+@media (max-width: 1350px) {
+    .products__list::before {
+        content: none;
+    }
+
+    .products__list::after {
+        content: none;
+    }
+
+    .products__box::after {
+        background-image: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .products__link::before {
+        top: 10px;
+    }
+}
+
+@media (max-width: 760px) {
+    .products__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .products__container {
+        text-align: center;
+        gap: 20px;
+    }
+
+    .products__quote-paragraph {
+        font-size: 20px;
+    }
+}

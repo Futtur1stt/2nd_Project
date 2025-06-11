@@ -1,0 +1,207 @@
+.honey {
+    display: flex;
+}
+
+.honey__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    column-gap: 15px;
+    margin-left: 50px;
+}
+
+.honey__wrapper::before {
+    position: absolute;
+    content: url("../Icons/Branch.svg");
+    left: -160px;
+    top: -60px;
+    margin-right: 5px;
+    width: 183px;
+    height: 236px;
+}
+
+.honey__title {
+    position: relative;
+    color: var(--color-title);
+    font-size: 136px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.honey__title::before {
+    position: absolute;
+    content: 'FRESH & SWEET AS HONEY.';
+    left: 10px;
+    margin-right: 5px;
+    height: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 0.72;
+}
+
+.honey__title::after {
+    position: absolute;
+    content: url("../Icons/Bee-left.svg");
+    left: 170px;
+    top: -150px;
+    margin-right: 5px;
+    width: 74px;
+    height: 53px;
+}
+
+.honey__description {
+    position: relative;
+    display: flex;
+    color: var(--color-txt-grey-dark);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.honey__description::before {
+    position: absolute;
+    content: url("../Icons/Flowers.svg");
+    left: -150px;
+    top: 200px;
+    margin-right: 5px;
+    width: 44px;
+    height: 58px;
+}
+
+.honey__description::after {
+    position: absolute;
+    content: url("../Icons/Bee-right.svg");
+    left: -90px;
+    top: -70px;
+    margin-right: 5px;
+    width: 167px;
+    height: 266px;
+} 
+
+.honey__button--red {
+    position: relative;
+    margin-bottom: 150px;
+    margin-top: 15px;
+}
+
+.honey__container {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+}
+
+.honey__container::before {
+    position: absolute;
+    content: url("../Icons/Bee-down.svg");
+    left: -60px;
+    top: 100px;
+    margin-right: 5px;
+    width: 188px;
+    height: 211px;
+}
+
+.honey__container::after {
+    position: absolute;
+    content: url("../Icons/Bee-left.svg");
+    left: 500px;
+    top: 20px;
+    margin-right: 5px;
+    width: 74px;
+    height: 53px;
+}
+
+.honey__button--pink {
+    margin-left: 10px;
+}
+
+@media (max-width: 1550px) {
+    .honey__container::before {
+        content: none;
+    }
+}
+
+@media (max-width: 1350px) {
+    .honey__wrapper::before {
+        content: none;
+    }
+
+    .honey__title {
+        font-size: 100px;
+    }
+
+    .honey__title::after {
+        content: none;
+    }
+
+    .honey__description::before {
+        content: none;
+    }
+
+    .honey__description::after {
+        content: none;
+    } 
+
+    .honey__container::after {
+        content: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .honey {
+        flex-direction: column;
+    }
+
+    .honey__wrapper {
+        align-items: center;
+        justify-content: center;
+        column-gap: 15px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .honey__title {
+        font-size: 80px;
+    }
+
+    .honey__title::before {
+        content: none;
+    }
+
+    .honey__button--red {
+        margin-bottom: 50px;
+    }
+
+    .honey__container {
+        order: 1;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    .honey__image {
+        max-width: 75%;
+    }
+
+    .honey__button--pink {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 760px) {
+    .honey__title {
+        font-size: 50px;
+    }
+
+    .honey__button--red {
+        margin-bottom: 30px;
+    }
+
+    .honey__image {
+        max-width: 75%;
+    }
+}
+

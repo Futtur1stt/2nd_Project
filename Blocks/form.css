@@ -1,0 +1,16 @@
+.form {
+    display: flex;
+    gap: 10px;
+}
+
+.form__input {
+    padding: 18px 21px;
+}
+
+@media (max-width: 760px) {
+    .form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,26 @@
+.input{
+    border: var(--border);
+}
+
+.input:hover {
+    border-color: var(--color-red);
+    transition-duration: var(--transition-duration);
+}
+
+.input:focus {
+    outline: none;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border: none;
+}
+
+.input:active {
+    background-color: var(--color-pink);
+    transition-duration: var(--transition-duration);
+}
+
+input::placeholder {
+    color: var(--color-txt-grey-dark);
+    font-size: 18px;
+    font-weight: 500;
+}

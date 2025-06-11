@@ -1,0 +1,27 @@
+.link {
+    display: inline-flex;
+    align-items: center;
+    height: 75px;
+    transition-duration: var(--transition-duration);
+    text-decoration: var(--text-decor);
+}
+
+.link:hover {
+    color: var(--color-red);
+    transform: scale(1.2);
+}
+
+.link:focus-visible {
+    border: var(--border);
+    padding: 3px;
+}
+
+.link:active {
+    color: var(--color-pink);
+}
+
+@media (max-width: 1024px) {
+    .link {
+        height: 50px;
+    }
+}

@@ -1,0 +1,196 @@
+.mission {
+    display: flex;
+    gap: 36px;
+}
+
+.mission__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.mission__preview {
+    position: relative;
+}
+
+.mission__preview::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-white);
+    top: 39%;
+    left: 44%;
+    border-radius: 50%;
+}
+
+.mission__preview::after {
+    position: absolute;
+    content: url("../Icons/Arrow.svg");
+    top: 46%;
+    left: 49%;
+}
+
+.mission__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mission__title {
+    color: var(--color-title);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.mission__quote {
+    position: relative;
+    gap: 33px;
+    color: var(--color-txt-grey-dark);
+}
+
+.mission__quote::after {
+    position: absolute;
+    content: url("../Icons/Author.svg");
+    top: 240px;
+}
+
+.mission__quote-paragraph {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.mission__container {
+    position: relative;
+    width: 420px;
+    height: 825px;
+}
+
+.mission__container::after {
+    position: absolute;
+    content: url("../Icons/Bee-up.svg");
+    top: 60px;
+    left: 500px;
+}
+
+.mission__heading {
+    color: var(--color-title);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.mission__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mission__time {
+    color: var(--color-red);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 1.3px;
+}
+
+.mission__caption {
+    color: var(--color-title);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.mission__description {
+    color: var(--color-txt-grey-light);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.mission__link {
+    color: var(--color-title);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 2.15;
+    letter-spacing: 1.95px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1350px) {
+    .mission__preview::after {
+        top: 47%;
+        left: 50%;
+    }
+
+    .mission__quote::after {
+        content: none;
+    }
+
+    .mission__container::after {
+        content: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mission {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .mission__preview::before {
+        content: none;
+    }
+
+    .mission__preview::after {
+        content: none;
+    }
+
+    .mission__container {
+        height: 650px;
+    }
+}
+
+@media (max-width: 760px) {
+    .mission {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mission__wrapper {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mission__box {
+        padding-inline: 10px;
+    }
+
+    .mission__quote-paragraph {
+        font-size: 16px;
+    }
+
+    .mission__container {
+        width: 360px;
+        padding-inline: 10px;
+        text-align: center;
+    }
+
+    .mission__heading {
+        margin-bottom: 10px;
+    }
+
+    .mission__item {
+        font-size: 15px;
+    }
+
+    .mission__description {
+        font-size: 8px;
+    } 
+}
