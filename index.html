@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mellifera</title>
+
+    <link rel="icon" href="./Icons/bee-left.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="stylesheet" href="./Blocks/header.css">
+    <link rel="stylesheet" href="./Blocks/link.css">
+    <link rel="stylesheet" href="./Blocks/menu.css">
+    <link rel="stylesheet" href="./Blocks/button.css">
+    <link rel="stylesheet" href="./Blocks/honey.css">
+    <link rel="stylesheet" href="./Blocks/section.css">
+    <link rel="stylesheet" href="./Blocks/mission.css">
+    <link rel="stylesheet" href="./Blocks/video.css">
+    <link rel="stylesheet" href="./Blocks/blockquote.css">
+    <link rel="stylesheet" href="./Blocks/products.css">
+    <link rel="stylesheet" href="./Blocks/gallery.css">
+    <link rel="stylesheet" href="./Blocks/form.css">
+    <link rel="stylesheet" href="./Blocks/input.css">
+    <link rel="stylesheet" href="./Blocks/news.css">
+    <link rel="stylesheet" href="./Blocks/types.css">
+    <link rel="stylesheet" href="./Blocks/footer.css">
+
+</head>
+<body class="container">
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="/" class="link header__link" target="_self">
+                <img 
+                    src="./Icons/Logo.svg" 
+                    alt="Mellifera" 
+                    class="header__logo"
+                    width="234px"
+                    height="48px"
+                    loading="lazy"
+                />
+            </a>
+        </div>
+        <nav class="menu header__menu">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="/" class="link header__menu-link header__menu-link--active" target="_self">
+                        Home
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/" class="link header__menu-link" target="_self">
+                        Pages
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/" class="link header__menu-link" target="_self">
+                        Products
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/" class="link header__menu-link" target="_self">
+                        Blog
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/" class="link header__menu-link" target="_self">
+                        Portfolio
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__contact">
+            <button class="button button--yellow header__button header__button--yellow" title="Contact with us" type="submit">
+                Contact
+            </button>
+        </div>
+    </header>
+
+    <main class="content">
+        <h1 class="visually-hidden">Mellifera</h1>
+        <section class="section section__margin honey">
+            <div class="honey__wrapper">
+                <h2 class="honey__title">
+                    Honey</br>
+                    bee
+                </h2>
+                <div class="honey__description">
+                    <p>
+                        Lorem ipsum dolor sit amet, sint nostrum mea ut, vel</br> 
+                        semper vidisse eu usu temporibus disputationi voluptatibus</br> 
+                        in ei est possit salutandi abhorrea acusa
+                    </p>
+                </div>
+                <button class="button button--red honey__button--red" title="View more">
+                    View more
+                </button>
+            </div>
+            <div class="honey__container">
+                <img 
+                    src="./Images/honey/honey.jpg" 
+                    alt="Honey in jar" 
+                    class="honey__image"
+                    width="760px"
+                    height="805px"
+                    loading="lazy"
+                />
+            </div>
+            <button class="button button--pink honey__button--pink" title="Chat with us">
+                Chat
+            </button>
+        </section>
+        <section class="section section__margin mission">
+            <div class="mission__wrapper">
+                <div class="mission__preview">
+                    <video
+                        src="/" 
+                        class="video mission__video" 
+                        width="800px"
+                        height="490px"
+                        poster="./Images/mission/intro.jpg">
+                    </video>
+                </div>
+                <div class="mission__box">
+                    <h2 class="mission__title">
+                        Our</br>
+                        mission
+                    </h2>
+                    <blockquote class="blockquote mission__quote">
+                        <p class="blockquote__paragraph mission__quote-paragraph">
+                            The bees live as they naturally would and their benefits reach more people. Our goal is to</br>
+                            raise <strong>Diego’s bee population</strong> throughout the city and at the same time <strong>spread</br>
+                            awareness among the community.</strong>
+                        </p>
+                        <p class="blockquote__paragraph mission__quote-paragraph">
+                            Our hope is that these backyard hives will facilitate a dialogue among neighbours,</br>
+                            friends, family and the community at large about the huge importance of bees.
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="mission__container">
+                <h3 class="mission__heading">
+                    News
+                </h3>
+                <ul class="mission__list">
+                    <li class="mission__item">
+                        <time datetime="2020-05-14" class="mission__time">
+                            May 14, 2020
+                        </time>
+                        <h4 class="mission__caption">
+                            Sweet Honey Packs Fresh</br>
+                            Raw and Unfiltered
+                        </h4>
+                        <div class="mission__description">
+                            <p>
+                                Duis aute irure dolor in reprehenderit in 
+                                voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur officia des.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="mission__item">
+                        <time datetime="2020-05-14" class="mission__time">
+                            May 14, 2020
+                        </time>
+                        <h4 class="mission__caption">
+                            Raw Bee Honey Products</br>
+                            And Beekeeping
+                        </h4>
+                        <div class="mission__description">
+                            <p>
+                                Dolore eu fugiat nulla pariatur. Excepteur sint 
+                                occaecat cupidatat non proident, sunt in culpa 
+                                qui officia des null.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="mission__item">
+                        <time datetime="2020-05-13" class="mission__time">
+                            May 13, 2020
+                        </time>
+                        <h4 class="mission__caption">
+                            Bees – Honey Bees and</br>
+                            Beekeeping Online Guide
+                        </h4>
+                        <div class="mission__description">
+                            <p>
+                                Voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint sunt in culpa qui officia 
+                                des cupidatat non.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="/" class="link mission__link" target="_blank">
+                    Show more news
+                </a>
+            </div>
+        </section>
+        <section class="section section__margin products">
+            <header class="header section__header products__header">
+                <h2 class="section__title products__title">
+                    Our</br>
+                    products
+                </h2>
+                <div class="section__description products__description">
+                    <p>
+                        Check out our online shop for cute bee-themed apparel, unique bee suits,</br>
+                        educational tools, gift certificates and more.
+                    </p>
+                </div>
+            </header>
+            <ul class="section__list products__list">
+                <li class="section__item products__item">
+                    <article class="section__card products__card">
+                        <img 
+                            src="./Images/products/1.jpg" 
+                            alt="Heather honey" 
+                            class="section__photo products__photo"
+                            width="380px"
+                            height="380px"
+                            loading="lazy"
+                        />
+                        <h3 class="section__caption products__caption">
+                            Heather</br>
+                            honey
+                        </h3>
+                        <span class="products__price">
+                            $10.00
+                        </span>
+                        <div class="section__specification products__specification">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing</br>
+                                elit, sed do eiusmod tempor incididunt.
+                            </p>
+                        </div>
+                        <a href="/" class="link section__link products__link" target="_self">
+                            Add to cart
+                        </a>
+                    </article>
+                </li>
+                <li class="section__item products__item">
+                    <article class="section__card products__card">
+                        <img 
+                            src="./Images/products/2.jpg" 
+                            alt="Jarrah honey" 
+                            class="section__photo"
+                            width="380px"
+                            height="380px"
+                            loading="lazy"
+                        />
+                        <h3 class="section__caption products__caption">
+                            Jarrah</br>
+                            honey
+                        </h3>
+                        <span class="products__price">
+                            $15.00
+                        </span>
+                        <div class="section__specification products__specification">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing</br>
+                                elit, sed do eiusmod tempor incididunt.
+                            </p>
+                        </div>
+                        <a href="/" class="link section__link products__link" target="_self">
+                            Add to cart
+                        </a>
+                    </article>
+                </li>
+                <li class="section__item products__item">
+                    <article class="section__card products__card">
+                        <img 
+                            src="./Images/products/3.jpg" 
+                            alt="Linden honey" 
+                            class="section__photo"
+                            width="380px"
+                            height="380px"
+                            loading="lazy"
+                        />
+                        <h3 class="section__caption products__caption">
+                            Linden</br>
+                            honey
+                        </h3>
+                        <span class="products__price">
+                            $20.00
+                        </span>
+                        <div class="section__specification products__specification">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing</br>
+                                elit, sed do eiusmod tempor incididunt.
+                            </p>
+                        </div>
+                        <a href="/" class="link section__link products__link" target="_self">
+                            Add to cart
+                        </a>
+                    </article>
+                </li>
+            </ul>
+            <div class="container products__wrapper">
+                <div class="products__box">
+                    <img 
+                        src="./Images/products/avatar.jpg" 
+                        alt="Woman photo" 
+                        class="products__avatar"
+                        width="310px"
+                        height="330px"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="products__container">
+                    <blockquote class="blockquote products__quote">
+                        <p class="blockquote__paragraph products__quote-paragraph">
+                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem</br>
+                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</br>
+                            quae ab illo inventore veritatis et quasi."
+                        </p>
+                    </blockquote>
+                    <span class="products__quote-author">
+                        Julia Klein
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="section section__margin gallery">
+            <header class="header section__header gallery__header">
+                <h2 class="section__title gallery__title">
+                    Our</br> 
+                    gallery
+                </h2>
+                <div class="section__description gallery__description">
+                    <p>
+                        Mellifera is a true beehive of activity! Check out the latest news and events in our</br> 
+                        image gallery and see for yourself.
+                    </p>
+                </div>
+            </header>
+            <ul class="section__list gallery__list">
+                <li class="section__item gallery__item">
+                    <img 
+                        src="./Images/gallery/1.jpg" 
+                        alt="" 
+                        class="gallery_photo"
+                        width="420px"
+                        height="270px"
+                        loading="lazy"
+                    />
+                </li>
+                <li class="section__item gallery__item">
+                    <img 
+                        src="./Images/gallery/2.jpg" 
+                        alt="" 
+                        class="gallery_photo"
+                        width="420px"
+                        height="270px"
+                        loading="lazy"
+                    />
+                </li>
+                <li class="section__item gallery__item">
+                    <img 
+                        src="./Images/gallery/3.jpg" 
+                        alt="" 
+                        class="gallery_photo"
+                        width="420px"
+                        height="270px"
+                        loading="lazy"
+                    />
+                </li>
+                <li class="section__item gallery__item">
+                    <img 
+                        src="./Images/gallery/4.jpg" 
+                        alt="" 
+                        class="gallery_photo"
+                        width="420px"
+                        height="270px"
+                        loading="lazy"
+                    />
+                </li>
+                <li class="section__item gallery__item">
+                    <img 
+                        src="./Images/gallery/5.jpg" 
+                        alt="" 
+                        class="gallery_photo"
+                        width="420px"
+                        height="270px"
+                        loading="lazy"
+                    />
+                </li>
+                <li class="section__item gallery__item">
+                    <img 
+                        src="./Images/gallery/6.jpg" 
+                        alt="" 
+                        class="gallery_photo"
+                        width="420px"
+                        height="270px"
+                        loading="lazy"
+                    />
+                </li>
+            </ul>
+        </section>
+        <section class="section section__margin news">
+            <div class="news__wrapper">
+                <img 
+                    src="./Images/news/1.jpg" 
+                    alt="" 
+                    class="news__photo"
+                    width="590px"
+                    height="620px"
+                    loading="lazy"
+                />
+            </div>
+            <div class="news__container">
+                <h2 class="section__title news__title">
+                    News letter</br> 
+                    sign up
+                </h2>
+                <div class="section__description news__description">
+                    <p>
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,</br>
+                        consectetur, adipisci velit, sed quia non numquam eius modi</br>
+                        tempora incidunt ut labore et dolore magnam aliquam quaerat</br>
+                        voluptatem dolores.
+                    </p>
+                </div>
+                <form class="form news__form" action="">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input 
+                        class="input form__input news__input" 
+                        id="email"
+                        type="email"
+                        placeholder="Email adress" 
+                        required
+                        autocomplete="on"
+                    >
+                    <button class="button button--red form__button news__button" title="Subscribe" type="submit">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section class="section section__margin types">
+            <header class="header section__header types__header">
+                <h2 class="section__title types__title">
+                    Types of</br> 
+                    honey
+                </h2>
+                <div class="section__description types__description">
+                    <p>
+                        Learn more about some of the products we take special pride in.
+                    </p>
+                </div>
+            </header>
+            <ul class="section__list types__list">
+                <li class="section__item types__item">
+                    <article class="section__card types__card">
+                        <img 
+                            src="./Images/types/1.jpg" 
+                            alt="Bear with jar of honey" 
+                            class="section__photo types__photo"
+                            width="155px"
+                            height="160px"
+                            loading="lazy"
+                        />
+                        <div class="section__wrapper types__wrapper">
+                            <h3 class="section__caption types__caption">
+                                Forest</br>
+                                honey
+                            </h3>
+                            <div class="section__specification types__specification">
+                                <p>
+                                    Id fierent ullamcorper concludaturque mei. Sed</br>
+                                    summo admodum honestatis ad Id fierent.
+                                </p>
+                            </div>
+                            <a href="/" class="link section__link types__link" target="_blank">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
+                </li>
+                <li class="section__item types__item">
+                    <article class="section__card types__card">
+                        <img 
+                            src="./Images/types/2.jpg" 
+                            alt="Healthy honey natural product" 
+                            class="section__photo types__photo"
+                            width="155px"
+                            height="160px"
+                            loading="lazy"
+                        />
+                        <div class="section__wrapper types__wrapper">
+                            <h3 class="section__caption types__caption">
+                                Creamed</br>
+                                honey
+                            </h3>
+                            <div class="section__specification types__specification">
+                                <p>
+                                    Id fierent ullamcorper concludaturque mei. Sed</br>
+                                    summo admodum honestatis ad Id fierent.
+                                </p>
+                            </div>
+                            <a href="/" class="link section__link types__link" target="_blank">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
+                </li>
+                <li class="section__item types__item">
+                    <article class="section__card types__card">
+                        <img 
+                            src="./Images/types/3.jpg" 
+                            alt="Honey natural 100%" 
+                            class="section__photo types__photo"
+                            width="155px"
+                            height="160px"
+                            loading="lazy"
+                        />
+                        <div class="section__wrapper types__wrapper">
+                            <h3 class="section__caption types__caption">
+                                Meadow</br>
+                                honey
+                            </h3>
+                            <div class="section__specification types__specification">
+                                <p>
+                                    Id fierent ullamcorper concludaturque mei. Sed</br>
+                                    summo admodum honestatis ad Id fierent.
+                                </p>
+                            </div>
+                            <a href="/" class="link section__link types__link" target="_blank">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
+                </li>
+                <li class="section__item types__item">
+                    <article class="section__card types__card">
+                        <img 
+                            src="./Images/types/4.jpg" 
+                            alt="Organic honey natural product" 
+                            class="section__photo types__photo"
+                            width="155px"
+                            height="160px"
+                            loading="lazy"
+                        />
+                        <div class="section__wrapper types__wrapper">
+                            <h3 class="section__caption types__caption">
+                                Liquid</br>
+                                honey
+                            </h3>
+                            <div class="section__specification types__specification">
+                                <p>
+                                    Id fierent ullamcorper concludaturque mei. Sed</br>
+                                    summo admodum honestatis ad Id fierent.
+                                </p>
+                            </div>
+                            <a href="/" class="link section__link types__link" target="_blank">
+                                Learn more
+                            </a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer footer__margin">
+        <h2 class="visually-hidden">Mellifera soc1als</h2>
+        <nav class="menu footer__menu">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="/" class="link footer__link" target="_blank">
+                        <svg viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="white" d="M9.78359 10.4688H7.14688V18.3438H3.63125V10.4688H0.748438V7.23438H3.63125V4.73828C3.63125 1.92578 5.31875 0.34375 7.88516 0.34375C9.11563 0.34375 10.4164 0.589844 10.4164 0.589844V3.36719H8.975C7.56875 3.36719 7.14688 4.21094 7.14688 5.125V7.23438H10.2758L9.78359 10.4688Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="/" class="link footer__link" target="_blank">
+                        <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="white" d="M8.6 4.30078C10.8148 4.30078 12.643 6.12891 12.643 8.34375C12.643 10.5938 10.8148 12.3867 8.6 12.3867C6.35 12.3867 4.55703 10.5938 4.55703 8.34375C4.55703 6.12891 6.35 4.30078 8.6 4.30078ZM8.6 10.9805C10.0414 10.9805 11.2016 9.82031 11.2016 8.34375C11.2016 6.90234 10.0414 5.74219 8.6 5.74219C7.12344 5.74219 5.96328 6.90234 5.96328 8.34375C5.96328 9.82031 7.15859 10.9805 8.6 10.9805ZM13.7328 4.16016C13.7328 4.6875 13.3109 5.10938 12.7836 5.10938C12.2563 5.10938 11.8344 4.6875 11.8344 4.16016C11.8344 3.63281 12.2563 3.21094 12.7836 3.21094C13.3109 3.21094 13.7328 3.63281 13.7328 4.16016ZM16.4047 5.10938C16.475 6.41016 16.475 10.3125 16.4047 11.6133C16.3344 12.8789 16.0531 13.9688 15.1391 14.918C14.225 15.832 13.1 16.1133 11.8344 16.1836C10.5336 16.2539 6.63125 16.2539 5.33047 16.1836C4.06484 16.1133 2.975 15.832 2.02578 14.918C1.11172 13.9688 0.830469 12.8789 0.760157 11.6133C0.689844 10.3125 0.689844 6.41016 0.760157 5.10938C0.830469 3.84375 1.11172 2.71875 2.02578 1.80469C2.975 0.890625 4.06484 0.609375 5.33047 0.539062C6.63125 0.46875 10.5336 0.46875 11.8344 0.539062C13.1 0.609375 14.225 0.890625 15.1391 1.80469C16.0531 2.71875 16.3344 3.84375 16.4047 5.10938ZM14.7172 12.9844C15.1391 11.9648 15.0336 9.50391 15.0336 8.34375C15.0336 7.21875 15.1391 4.75781 14.7172 3.70312C14.4359 3.03516 13.9086 2.47266 13.2406 2.22656C12.1859 1.80469 9.725 1.91016 8.6 1.91016C7.43984 1.91016 4.97891 1.80469 3.95938 2.22656C3.25625 2.50781 2.72891 3.03516 2.44766 3.70312C2.02578 4.75781 2.13125 7.21875 2.13125 8.34375C2.13125 9.50391 2.02578 11.9648 2.44766 12.9844C2.72891 13.6875 3.25625 14.2148 3.95938 14.4961C4.97891 14.918 7.43984 14.8125 8.6 14.8125C9.725 14.8125 12.1859 14.918 13.2406 14.4961C13.9086 14.2148 14.4711 13.6875 14.7172 12.9844Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="/" class="link footer__link" target="_blank">
+                        <svg viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="white" d="M16.7367 3.6875C16.7367 3.86328 16.7367 4.00391 16.7367 4.17969C16.7367 9.06641 13.0453 14.6562 6.26016 14.6562C4.15078 14.6562 2.21719 14.0586 0.6 13.0039C0.88125 13.0391 1.1625 13.0742 1.47891 13.0742C3.20156 13.0742 4.78359 12.4766 6.04922 11.4922C4.43203 11.457 3.06094 10.4023 2.60391 8.92578C2.85 8.96094 3.06094 8.99609 3.30703 8.99609C3.62344 8.99609 3.975 8.92578 4.25625 8.85547C2.56875 8.50391 1.30313 7.02734 1.30313 5.23438V5.19922C1.79531 5.48047 2.39297 5.62109 2.99063 5.65625C1.97109 4.98828 1.33828 3.86328 1.33828 2.59766C1.33828 1.89453 1.51406 1.26172 1.83047 0.734375C3.65859 2.94922 6.40078 4.42578 9.45938 4.60156C9.38906 4.32031 9.35391 4.03906 9.35391 3.75781C9.35391 1.71875 11.0063 0.0664062 13.0453 0.0664062C14.1 0.0664062 15.0492 0.488281 15.7523 1.22656C16.5609 1.05078 17.3695 0.734375 18.0727 0.3125C17.7914 1.19141 17.2289 1.89453 16.4555 2.35156C17.1938 2.28125 17.932 2.07031 18.5648 1.78906C18.0727 2.52734 17.4398 3.16016 16.7367 3.6875Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__wrapper">
+            <a href="/" class="link footer__wrapper-link" target="_self">
+                <img 
+                    src="./Icons/Logo-footer.svg" 
+                    alt="Mellifera logo" 
+                    class="footer__logo"
+                    width="40px"
+                    height="28px"
+                    loading="lazy"
+                />
+            </a>
+        </div>
+        <div class="footer__copyright">
+            <p>
+                © 2020 Qode Interactive All Rights Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

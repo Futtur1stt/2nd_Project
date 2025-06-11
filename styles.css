@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./Fonts/OpenSans-Regular.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./Fonts/OpenSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-yellow: #D3A863;
+    --color-red: #C74817;
+    --color-pink: #EE2852;
+    --color-input-border: #545050;
+    --color-txt-grey-dark: #383838; 
+    --color-txt-grey-light: #5B5858;
+    --color-link: #3C3C3C;
+    --color-title: #131313;
+
+    --font-family-base: 'Open Sans', sans-serif;
+
+    --container-width: 1920px;
+    --container-padding-x: 100px;
+
+    --transition-duration: 0.3s;
+
+    --text-decor: none;
+
+    --border: 1px solid var(--color-title);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--color-txt-grey-dark);
+  background-color: var(--color-white);
+  transition: background-color .4s, color .4s;
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+svg *[fill] { fill: currentColor }
+svg *[stroke] { stroke: currentColor }
+
+svg * {
+  transition-property: fill, stroke;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --container-padding-x: 65px;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --container-padding-x: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --container-padding-x: 20px;
+  }
+}
