@@ -1,0 +1,4 @@
+.blockquote {
+    display: flex;
+    flex-direction: column;
+}

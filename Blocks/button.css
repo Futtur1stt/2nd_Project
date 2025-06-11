@@ -1,0 +1,143 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: var(--color-white);
+    text-transform: uppercase;
+    padding: 16px;
+}
+
+.button--yellow {
+    position: relative;
+    color: var(--color-white);
+    background-color: var(--color-yellow);
+    width: 140px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 0.5;
+    letter-spacing: 2.1px;
+}
+
+.button--yellow:hover {
+    background-color: var(--color-red);
+    transition-duration: var(--transition-duration);
+    opacity: .7;
+}
+
+.button--yellow:focus-visible {
+    border: var(--border);
+    padding: 3px;
+}
+
+.button--yellow:active {
+    background-color: var(--color-pink);
+}
+
+.button--yellow::before {
+    position: absolute;
+    content: url("/Icons/Basket.svg");
+    left: -50px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.button--yellow::after {
+    position: absolute;
+    content: url("/Icons/Zero.svg");
+    top: 10px;
+    left: -30px;
+    margin-right: 5px;
+} 
+
+.button--red {
+    color: var(--color-white);
+    background-color: var(--color-red);
+    width: 170px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 0.7;
+    letter-spacing: 2.4px;
+}
+
+.button--red:hover {
+    background-color: var(--color-yellow);
+    transition-duration: var(--transition-duration);
+    opacity: .7;
+}
+
+.button--red:focus-visible {
+    border: var(--border);
+    padding: 3px;
+}
+
+.button--red:active {
+    background-color: var(--color-pink);
+}
+
+.button--pink {
+    position: relative;
+    display: flex;
+    align-self: flex-end;
+    color: var(--color-white);
+    background-color: var(--color-pink);
+    width: 105px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: none;
+    padding: 15px 20px 15px 35px;
+    border: 1px solid var(--color-pink);
+    border-radius: 20px;
+}
+
+.button--pink:hover {
+    background-color: var(--color-red);
+    transition-duration: var(--transition-duration);
+    opacity: .7;
+}
+
+.button--pink:focus-visible {
+    border: var(--border);
+}
+
+.button--pink:active {
+    background-color: var(--color-yellow);
+}
+
+.button--pink::before {
+    position: absolute;
+    content: url("/Icons/Message.svg");
+    top: 12px;
+    left: 11px;
+}
+
+@media (max-width: 1024px) {
+    .button {
+        width: 120px;
+        height: 40px;
+        padding: 5px;
+    }
+
+    .button--red {
+        font-size: 14px;
+    }
+
+    .button--pink {
+        justify-content: center;
+        align-self: center;
+        width: 80px;
+        height: 35px;
+        padding: 5px 10px 5px 25px;
+    }
+
+    .button--pink::before {
+        top: 5px;
+        left: 5px;
+    }
+}
+
